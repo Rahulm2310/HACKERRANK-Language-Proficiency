@@ -13,6 +13,7 @@ public class Solution {
 
         
         Locale INDIA = new Locale("en", "IN");
+        
 
         NumberFormat us = NumberFormat.getCurrencyInstance(Locale.US);
         NumberFormat china = NumberFormat.getCurrencyInstance(Locale.CHINA);
@@ -24,6 +25,7 @@ public class Solution {
         System.out.println("India: " + india.format(payment));
         System.out.println("China: " + china.format(payment));
         System.out.println("France: " + france.format(payment));
+        
     }
 }
 
