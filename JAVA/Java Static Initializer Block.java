@@ -9,6 +9,7 @@ public class Solution {
     static int H;
     static boolean flag=false;
 
+    
 static {
 
     Scanner sc=new Scanner(System.in);
@@ -27,4 +28,4 @@ static {
 
 }
     
-public static void main(String[] args){
+
