@@ -35,13 +35,13 @@ public class Solution {
                 else if(num.length()==1)
                 {
                 
-                
                     num="00"+num;
                 }
 
                 System.out.println(s1+num);
                 
             }
+        
             
             System.out.println("================================");
             
