@@ -25,18 +25,22 @@ public class Solution {
                     flag=1;
                 }
             }
+            
 
             if(flag==0)
             {
                 return true;
             }
+            
             else if(flag==1)
             {
                 return false;
             }
+            
         }
 
-        else{
+        else
+        {
             return false;
         }
 
