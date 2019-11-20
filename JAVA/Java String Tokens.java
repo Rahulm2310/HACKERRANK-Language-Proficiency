@@ -13,15 +13,21 @@ public class Solution {
             System.out.println("0");
         }
         
+        
         else if(s.length()<400000)
         {
+            
             String arr[]=s.trim().split("[ !,?._'@]+");
             System.out.println(arr.length);
+            
             for(int i=0;i<arr.length;i++)
             {
+                
+                
                 System.out.println(arr[i]);
             }
         }
+        
         
         scan.close();
         
