@@ -17,12 +17,12 @@ public class DuplicateWords {
             
             Matcher m = p.matcher(input);
             
-            // Check for subsequences of input that match the compiled pattern
+            
             while (m.find()) {
                 input = input.replaceAll(/* The regex to replace */m.group(),m.group(1) /* The replacement. */);
             }
             
-            // Prints the modified sentence.
+            
             System.out.println(input);
         }
         
