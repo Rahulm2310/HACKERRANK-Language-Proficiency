@@ -9,15 +9,20 @@ public class Solution {
         int n=sc.nextInt();
         ArrayList<ArrayList> l=new ArrayList<ArrayList>();
         
+        
         for(int i=0;i<n;i++)
         {
+            
             int d=sc.nextInt();
             l.add(new ArrayList<Integer>());
+            
             for(int j=0;j<d;j++)
             {
+                
                 int val=sc.nextInt();
                 l.get(i).add(val);
             }
+            
         }
 
         int q=sc.nextInt();
