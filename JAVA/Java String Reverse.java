@@ -14,6 +14,7 @@ public class Solution {
         
         for(int i=0;i<(A.length())/2;i++ )
         {
+            
             if(A.charAt(beg)!=A.charAt(end))
             {
                 flag=1;
@@ -29,6 +30,7 @@ public class Solution {
         {
             System.out.println("No");
         }
+        
         else
         {
             System.out.println("Yes");
