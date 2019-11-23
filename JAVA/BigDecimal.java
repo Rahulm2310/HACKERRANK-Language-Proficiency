@@ -1,8 +1,10 @@
 import java.math.BigDecimal;
 import java.util.*;
 class Solution{
-    public static void main(String []args){
-        //Input
+    
+    public static void main(String []args)
+    {
+        
         Scanner sc= new Scanner(System.in);
         int n=sc.nextInt();
         String []s=new String[n+2];
@@ -24,6 +26,7 @@ class Solution{
         return a.compareTo(b);
     }
 }));
+        
         
 
         //Output
