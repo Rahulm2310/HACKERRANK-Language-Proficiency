@@ -14,15 +14,19 @@ public class Solution {
 
     public static void main(String[] args) 
     {
+        
         String n = scanner.nextLine();
         BigInteger b=new BigInteger(n);
+        
         if(b.isProbablePrime(100))
         {
             System.out.println("prime");
         }
+        
         else
             System.out.println("not prime");
 
         scanner.close();
+        
     }
 }
