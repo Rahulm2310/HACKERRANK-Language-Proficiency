@@ -16,6 +16,7 @@ public class Solution {
 
         for(int i=0;i<m;i++)
         {
+            
             String s=sc.next();
             int x=sc.nextInt();
             int y=sc.nextInt();
@@ -35,14 +36,17 @@ public class Solution {
 
             if(s.equals("OR"))
             {
+                
                 if(x==1)
                 {
                     b1.or(b2);
                 }
+                
                 else if(x==2)
                 {
                     b2.or(b1);
                 }
+                
                 System.out.println(b1.cardinality()+" "+b2.cardinality());
 
             }
@@ -57,6 +61,7 @@ public class Solution {
                 {
                     b2.xor(b1);
                 }
+                
                 System.out.println(b1.cardinality()+" "+b2.cardinality());
 
             }
@@ -71,6 +76,7 @@ public class Solution {
                 {
                     b2.flip(y);
                 }
+                
                 System.out.println(b1.cardinality()+" "+b2.cardinality());
 
 
@@ -93,5 +99,6 @@ public class Solution {
         }
 
     }
+    
 }
 
