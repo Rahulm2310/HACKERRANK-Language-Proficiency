@@ -4,28 +4,39 @@ import java.util.Scanner;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
- class Student{
+ class Student
+  {
+
+
 
     private int id;
     private String name;
     private double cgpa;
 
-     Student(int id, String name, double cgpa){
+     Student(int id, String name, double cgpa)
+     {
          super();
          this.id=id;
          this.name=name;
          this.cgpa=cgpa;
+      
      }
+  
 
-     int getID(){
+     int getID()
+     {
          return id;
      }
 
-    String getName(){
+  
+    String getName()
+    {
         return name;
     }
 
-    double getCGPA(){
+  
+    double getCGPA()
+    {
         return cgpa;
     }
 
@@ -34,9 +45,11 @@ import java.util.PriorityQueue;
  }
 
 
-class Priorities{
+class Priorities
+{
 
-    List<Student> getStudents(List<String> events){
+    List<Student> getStudents(List<String> events)
+{
 
         PriorityQueue<Student> pq = new PriorityQueue<Student>(
     Comparator.comparing(Student::getCGPA).reversed()
@@ -49,6 +62,7 @@ class Priorities{
         
         for(int i=0;i<events.size();i++)
         {
+         
             Scanner in =new Scanner(events.get(i));
             String event = in.next();
             if (event.equals("ENTER")) {
@@ -57,17 +71,22 @@ class Priorities{
                 int token = in.nextInt();
                 pq.add(new Student(token,name,cgpa));
             }
+         
             else if(event.equals("SERVED"))
             {
                Student first= pq.poll();
             }
+         
             in.close();
         }
+     
 
         Student first = pq.poll();
         if (first == null) {
             return l;
-        } else {
+        } 
+        else
+        {
             while (first != null) {
 
                 l.add(first);
