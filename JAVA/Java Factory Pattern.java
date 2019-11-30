@@ -7,7 +7,8 @@ interface Food {
   
   
 	class Pizza implements Food 
-  {
+ 	 {
+	 
          public String getType() 
          {
              return "Someone ordered a Fast Food!";
@@ -22,6 +23,7 @@ interface Food {
           {
                  return "Someone ordered a Dessert!";
           }
+		
 	}
   
   
@@ -50,7 +52,8 @@ interface Food {
            {
               Do_Not_Terminate.forbidExit();
 
-            try{
+            try
+	    {
 
               Scanner sc=new Scanner(System.in);
               //creating the factory
@@ -61,11 +64,16 @@ interface Food {
 
               System.out.println("The factory returned "+food.getClass());
               System.out.println(food.getType());
+		    
+		    
             }
+		   
 
             catch (Do_Not_Terminate.ExitTrappedException e) {
               System.out.println("Unsuccessful Termination!!");
             }
+		   
+		   
            }
 
 	}
@@ -82,14 +90,18 @@ interface Food {
 
             public static void forbidExit()
             {
+		    
                 final SecurityManager securityManager = new SecurityManager() {
+			
                     @Override
+			
                     public void checkPermission(Permission permission) {
                         if (permission.getName().contains("exitVM")) {
                             throw new ExitTrappedException();
                         }
                     }
                 };
+		    
                 System.setSecurityManager(securityManager);
             }
 	}	
